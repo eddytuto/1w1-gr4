@@ -7,21 +7,28 @@ https://developer.mozilla.org/fr/docs/web/css/css_selectors
     flex-direction: column;
     gap : 10px;
 }
+
 .formulaire input[type="text"]{
-    background-color: aqua;
+    background-color: rgb(234, 245, 245);
+    width: 400px;
 }
 .formulaire fieldset {
     background-color: #bbb;
     display : flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .formulaire legend {
     font-size: 1.5rem;
     padding : 3px;
 }
-.formulaire .langage {
-   flex-direction: column;
+.formulaire fieldset label {
+    margin-left : 20px;
+    background-color: rgba(0,0,0,.1);
+    padding : 5px;
+
 }
+
 
 /* sélecteur plus spécifique */
 .form__nom{}

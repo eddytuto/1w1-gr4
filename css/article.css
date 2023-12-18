@@ -1,0 +1,99 @@
+/*
+
+
+<div id="article">
+      <section>
+        <h2>Article</h2>
+        <article class="article">
+          <section class="article__section">
+            <figure class="article__figure">
+              <img src="image/laser_00.jpg" alt="" class="article__img">
+              <figcaption class="article__figcaption">Voile dans la classe Laser</figcaption>
+            </figure>
+            <p class="article__paragraphe">
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita labore ullam ea! Porro, laudantium nisi. Sequi similique nihil sed nesciunt. Corporis accusantium doloribus fuga similique dicta dolor asperiores perspiciatis ad.
+            </p>
+          </section>
+
+*/
+
+#article{
+  background-image:  linear-gradient(90deg, rgba(255, 0, 0, 0.075), rgba(255, 187, 0, 0.1)) , url("../image/arriere-brique-rouge.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: repeat;
+ 
+}
+
+
+
+#article > section {
+
+  background-image: linear-gradient(90deg, #f34f0e54, #f8ecb857);
+
+}
+
+
+.article{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.article__section{
+    display: flex;
+     flex-direction: row;
+    /*  border : 1px solid #aaa; */
+     gap: 4rem;
+     padding : 4rem;
+    font-family: 'Pacifico', cursive;
+    flex-wrap: wrap;
+    border-bottom: 5px dotted #7a2424;
+        color : rgb(95, 10, 10)
+
+}
+
+.article__section:nth-of-type(even)  .article__paragraphe {
+  order: -1;
+ 
+
+}
+
+.article__figure{
+    flex: 1 1 300px;
+
+}
+.article__paragraphe{
+  flex: 1 1 500px;
+
+  font-size: clamp(1rem, 0.0104rem + 3.1667vw, 2.1875rem);
+  
+
+  line-height: 3rem;
+}
+
+.article__img{
+
+width : 100%; 
+ object-fit: cover;
+ border-radius : 5%;
+}
+
+.article__section:nth-of-type(even)  .article__figure {
+   transform : rotate(-5deg); 
+  
+}
+
+.article__section:nth-of-type(odd)  .article__figure {
+    transform : rotate(5deg); 
+}
+
+.article__figcaption {
+  text-align : center;
+  font-size: clamp(0.8125rem, 0.4479rem + 1.1667vw, 1.25rem);
+}
+
+#article h2 {
+     color: #c90000;
+}
+

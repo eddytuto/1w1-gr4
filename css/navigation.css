@@ -4,7 +4,7 @@
   /* top : 100%; */
   top: 0;
   right: 0;
-  background-color: black;
+  background-color:rgba(0,0,0,.5);
   gap: 5px;
   padding: 10px;
   flex-direction: column;
@@ -14,15 +14,20 @@
    bottom:
    position:
    */
-
+font-size: 2rem;
   transform: translateY(-200%);
   transition: transform 0.25s;
+}
+
+.navigation a {
+  text-decoration: none;
+
 }
 #burger {
   /* margin-left: auto; /* utilise l'espace restant à gauche de la navigation*/
   position: absolute;
   top: 10px;
-  right: 39px;
+  right: 45px;
   z-index: 11;
 }
 /*

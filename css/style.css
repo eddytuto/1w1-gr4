@@ -39,9 +39,7 @@ body > div {
   display: flex;
   justify-content: center;
 }
-#entete {
-  z-index: 10;
-}
+
 
 body > div > section,
 body > div > footer,
@@ -61,9 +59,7 @@ body > div > section {
   flex-direction: column;
 }
 
-body > div > header {
-  position: relative;
-}
+
 
 body > div > section {
   min-height: 100vh;
@@ -76,45 +72,63 @@ body > div > footer {
 /* Entete */
 /* body>div:nth-of-type(1) */
 #entete {
+
   background-color: beige;
-  position: sticky;
+  position: sticky; 
   top: 0;
   /*
     90deg : de gauche à droite 
     -90deg : de droite à gauche
+    0deg : de haut vers lebas 
     */
-  background-image: linear-gradient(20deg, #00f, #0f0);
+ 
+
+  background-image: linear-gradient(20deg, rgb(237 249 236), rgb(81 153 112));
+
+  z-index: 10;
+
 }
+
+
+
 /* body>div:nth-of-type(2) */
 #accueil {
   background-color: rgb(236, 236, 175);
 }
-body > div:nth-of-type(3) {
+#article {
   background-color: rgb(171, 216, 205);
-}
+}  
+
 body > div:nth-of-type(4) {
   background-color: rgb(153, 154, 128);
 }
+
 body > div:nth-of-type(5) {
   background-color: rgb(165, 165, 64);
 }
 
 #contact {
-  background-color: rgb(34, 34, 30);
+  /* background-color: rgb(34, 34, 30); */
+  background-image: linear-gradient(20deg, rgb(3, 3, 33), rgb(10, 23, 104));
 }
 
+/*
+https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9
+*/
 
-h1 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: clamp(1rem, -0.875rem + 8.333vw, 5.5rem);
-  text-shadow: 6px 4px 12px #555;
-}
+
+
 h2 {
-  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+
+  font-size: clamp(1.875rem, -0.7292rem + 8.3333vw, 5rem);
+  padding-top : 23vh;
+  font-family: 'Permanent Marker', cursive;
+  color : rgba(0,0,0, .5);
 }
+
 h3 {
 }
+
 h4 {
 }
 
