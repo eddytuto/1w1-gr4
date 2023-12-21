@@ -5,3 +5,7 @@
 
 #### Lien github-page : https://eddytuto.github.io/1w1-gr4/
 
+#### Si vous voulez en savoir plus sur le format « markdown »
+- https://www.markdownguide.org/cheat-sheet/
+- https://www.markdownguide.org/
+
